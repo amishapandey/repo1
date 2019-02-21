@@ -1,13 +1,12 @@
 import java.util.Scanner;
 class Simple{
 public static void main(String args[]){
-Scanner scc=new Scanner(System.in);
+Scanner sc=new Scanner(System.in);
 int n=sc.nextInt();
-int c,i,sum=0;
-for(i=n;i>=1;i--){
-c=i*(i-1);
-sum=sum+c;
+int i,fact=1;
+for(i=1;i<=n;i++){
+fact=fact*i;
 }
-System.out.println(sum);
+System.out.println(fact);
 }
 }
