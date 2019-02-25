@@ -5,13 +5,13 @@ Scanner n=new Scanner(System.in);
 int k=n.nextInt();
 int temp=k;
 int r,q,sum=0;
-while(k!=0){
-r=k/10;
+while(k>0){
+r=k%10;
+k=k/10; 
 q=r*r*r;
 sum=sum+q;
-k=k%10;
 }
-if(temp==k){
+if(temp==sum){
 System.out.println("yes");
 }
 else 
